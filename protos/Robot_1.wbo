@@ -1,17 +1,4 @@
-#VRML_SIM R2019a utf8
-WorldInfo {
-}
-Viewpoint {
-  orientation -0.21876054307388326 0.9115855339709675 0.34807418612831026 2.083466187496789
-  position 5.614610882890205 4.680203285248828 -3.5277478983236428
-}
-TexturedBackground {
-}
-TexturedBackgroundLight {
-}
-Floor {
-  size 20 20
-}
+#VRML_OBJ R2019a utf8
 Robot {
   translation 0 0.1 0
   rotation 1 0 0 0
@@ -45,7 +32,7 @@ Robot {
     }
     DEF ROBOT_BODY Shape {
       appearance PBRAppearance {
-        baseColor 0 0 0
+        baseColor 0.45098039215686275 0.8235294117647058 0.08627450980392157
       }
       geometry DEF G_BODY Box {
         size 0.25 0.07 0.1
@@ -106,7 +93,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.049997771746158416 1.3850505450352948e-05 -0.060000000000031826
-        rotation -0.9999996913646529 0.0005555506524007312 -0.0005555484420299349 1.5708006147337576
+        rotation -0.999999691364653 0.0005555506524007313 -0.000555548442029935 1.5708006147337576
         children [
           Shape {
             appearance USE A_WHEEL1
@@ -121,7 +108,6 @@ Robot {
     }
     DistanceSensor {
       translation 0.125 0 0
-      rotation 0 0 1 0.05
       children [
         Shape {
           appearance PBRAppearance {
@@ -148,69 +134,5 @@ Robot {
       0 0 0
     ]
   }
-  controller "U2_exam_Chacon_Ivan"
-}
-Solid {
-  translation 1.9000349336609001 0.15004578085688855 -4.6862694289342977e-07
-  rotation 0 1 0 1.5707996938995747
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0.788235294117647 0 0.7137254901960784
-      }
-      geometry DEF G_OBSTACLE Box {
-        size 0.3 0.30000000000000004 0.19999999999999998
-      }
-    }
-  ]
-  name "solid(1)"
-  boundingObject USE G_OBSTACLE
-}
-Solid {
-  translation 0.7028705409302966 0.15004578085688855 -2.111834105920169
-  rotation 0 1 0 3.141596015899575
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0.788235294117647 0 0.7137254901960784
-      }
-      geometry DEF G_OBSTACLE Box {
-        size 0.3 0.30000000000000004 1.2999999999999998
-      }
-    }
-  ]
-  name "solid(2)"
-  boundingObject USE G_OBSTACLE
-}
-Solid {
-  translation 0.36288156930832005 0.15004578085688855 1.1681670424730488
-  rotation 0 1 0 4.712392337899575
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0.788235294117647 0 0.7137254901960784
-      }
-      geometry DEF G_OBSTACLE Box {
-        size 0.3 0.30000000000000004 0.8
-      }
-    }
-  ]
-  name "solid(4)"
-  boundingObject USE G_OBSTACLE
-}
-Solid {
-  translation 1.903840451118949 0.15004578085688855 -1.9408688047772535
-  rotation 0 1 0 3.141596015899575
-  children [
-    Shape {
-      appearance PBRAppearance {
-        baseColor 0.788235294117647 0 0.7137254901960784
-      }
-      geometry DEF G_OBSTACLE Box {
-        size 2.1 0.30000000000000004 0.19999999999999998
-      }
-    }
-  ]
-  name "solid(3)"
-  boundingObject USE G_OBSTACLE
+  controller "Robot1_1"
 }
